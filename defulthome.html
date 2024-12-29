@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="defulthome.html">products</a>
+    </nav>
+
+
+     
+
+
+    <style>
+        body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: rgb(232, 232, 232);
+                }
+        
+                .navbar {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: rgb(42, 104, 66);
+                    padding: 1em;
+                }
+        
+                .navbar a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 0.5em 1em;
+                    font-size: large;
+                }
+        
+                .navbar a:hover {
+                    background-color: #ebe8c7;
+                    border-radius: 4px;
+                }
+         
+                #product-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+#products {
+    display: flex; /* استخدام Flexbox */
+    flex-wrap: wrap; /* يسمح بتغليف العناصر إلى الصفوف */
+    justify-content: space-between; /* توزيع المساحة بين العناصر */
+}
+
+.product {
+    background: white;
+    border: 4px solid rgb(42, 104, 66);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(48% - 20px); /* عرض كل منتج ليكون 48% من العرض الكلي مع مراعاة الهوامش */
+    box-sizing: border-box; /* لضمان أن padding و border لا يؤثران على العرض */
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product:hover {
+    transform: scale(1.02); /* تكبير المنتج عند التحويم */
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* إضافة مسافة بين الصورة والنص */
+}
+h1{
+    text-align: center;
+    color: rgb(42, 104, 66);
+}
+
+         </style>
+        <div id="product-container">
+            <h1>Products available now!</h1>
+            <div id="products"></div>
+        </div>
+
+
+        <script src="main.js"></script>
+
+
+
+</body>
+</html>
+ 
